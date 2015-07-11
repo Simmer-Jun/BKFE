@@ -9,8 +9,4 @@
  * `Optimization`文件夹：前端优化
  * `Tools`文件夹：前端工具的介绍
  * `img`文件夹：存放图片目录
-```sequence
-Alice->Bob: Hello Bob, how are you?
-Note right of Bob: Bob thinks
-Bob-->Alice: I am good thanks!
-```
+
