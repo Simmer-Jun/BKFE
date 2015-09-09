@@ -25,6 +25,6 @@
     4 根据语言  :lang()伪类  *:lang(fr) 选中所有的法语元素
     5 结合伪类 a:link:hover 
 * 伪元素选择器
-    1 设置首字母样式  p:first-letter 只能用于标记与段落等块级元素
-    2 设置首行样式  p:first-line   只能用于标记与段落等块级元素
-    3 :before   and  :after  伪元素
+    * 设置首字母样式  p:first-letter 只能用于标记与段落等块级元素
+    * 设置首行样式  p:first-line   只能用于标记与段落等块级元素
+    * :before   and  :after  伪元素
