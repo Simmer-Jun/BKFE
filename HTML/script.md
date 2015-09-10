@@ -2,8 +2,8 @@
 标签： script标签
 ---
 
-## scrip>标签有几个属性？##
- * src 指向一个外部JavaScript文件（可以不同域） 当含有src属性后将不会去执行 <script>标签内部代码
+## scrip标签有几个属性？##
+ * src 指向一个外部JavaScript文件（可以不同域） 当含有src属性后将不会去执行 script标签内部代码
  * defer 表明当前的JavaScript代码不会对DOM结构进行修改，浏览器遇到加了derfer属性的标签后将会立即下载但延迟加载，按照HTML5规范，所有的加了defer属性的script标签都会按照它们在HTML文档的顺序去执行。 IE&firefox &chrome  onload事件触发前！？？
  * async 与defer类似 但是不能保证按照在HTML中出现的顺序，如果需要加载需要互不依赖的JavaScript代码 可以使用这个属性
  * type属性 但是这在HTML5中式可选的。
@@ -17,7 +17,7 @@
  * web性能优化重要的一点。
 
 ## 使用DOM 动态加载script标签 对于动态加载的script标签：##
-{% lang:javascript %}
+{% codeblock  lang:js %}
 var script = document.createElement('script');
 script.src = 'load.js';
 if(script.readyState) {
@@ -33,7 +33,7 @@ alert("javascript loaded! expect IE!")
 }
 }
 document.getElementsByTagName('body')[0].appendChild(script);
-{% code end %}
+{% endcodeblock %}
 
 我发现了什么?
 * IE 会在window.onload事件触发后去执行DOM动态加载的代码
