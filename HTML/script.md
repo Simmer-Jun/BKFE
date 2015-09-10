@@ -1,6 +1,8 @@
-# HTML <script>标签 #
+# HTML script标签 #
+标签： script标签
+---
 
-## <script>标签有几个属性？##
+## scrip>标签有几个属性？##
  * src 指向一个外部JavaScript文件（可以不同域） 当含有src属性后将不会去执行 <script>标签内部代码
  * defer 表明当前的JavaScript代码不会对DOM结构进行修改，浏览器遇到加了derfer属性的标签后将会立即下载但延迟加载，按照HTML5规范，所有的加了defer属性的script标签都会按照它们在HTML文档的顺序去执行。 IE&firefox &chrome  onload事件触发前！？？
  * async 与defer类似 但是不能保证按照在HTML中出现的顺序，如果需要加载需要互不依赖的JavaScript代码 可以使用这个属性
