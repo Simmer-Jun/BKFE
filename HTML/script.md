@@ -17,23 +17,23 @@
  * web性能优化重要的一点。
 
 ## 使用DOM 动态加载script标签 对于动态加载的script标签：##
-{% codeblock  lang:js %}
-var script = document.createElement('script');
-script.src = 'load.js';
-if(script.readyState) {
-script.onreadystatechange = function () {
-if (script.readyState == 'loaded' || script.readyState == 'complete') { // 老版本IE 
-script.onreadystatechange = null;
-alert('javascript loaded!');
-}
-}
-} else {
-script.onload = function () {  // IE9+ and 标准浏览器兼容
-alert("javascript loaded! expect IE!")
-}
-}
-document.getElementsByTagName('body')[0].appendChild(script);
-{% endcodeblock %}
+
+    var script = document.createElement('script');
+    script.src = 'load.js';
+    if(script.readyState) {
+    script.onreadystatechange = function () {
+    if (script.readyState == 'loaded' || script.readyState == 'complete') { // 老版本IE 
+    script.onreadystatechange = null;
+    alert('javascript loaded!');
+    }
+    }
+    } else {
+    script.onload = function () {  // IE9+ and 标准浏览器兼容
+    alert("javascript loaded! expect IE!")
+    }
+    }
+    document.getElementsByTagName('body')[0].appendChild(script);
+
 
 我发现了什么?
 * IE 会在window.onload事件触发后去执行DOM动态加载的代码
