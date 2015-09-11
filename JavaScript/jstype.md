@@ -15,11 +15,11 @@
  * 利用原型链查找，但是在跨iframe的时候由于来源不同 所以判断不同框架不能使用instanceof 
  * 当然instanceof的用处不仅仅如此，它能判断某个实例是否是是某个构造函数的的实例
 
-## 使用toString() ##
+## 使用toString ##
 
 判断复杂的引用类型怎么办？当然要数toString方法
-使用Object.prototype.toString.call(obj) 能够精确的返回一个对obj的类型判断的字符串。结果如下：
- * Object.prototype.toString.call([1，2，3]) // "[object Array]"
- * Object.prototype.toString.call({name:"simmer"}) // "[object Object]"
- * Object.prototype.toString.call(/ simmer/g) // "[object RegExp]"
- * Object.prototype.toString.call(true) // "[object Boolean]"
+使用`Object.prototype.toString.call(obj)` 能够精确的返回一个对obj的类型判断的字符串。结果如下：
+ * `Object.prototype.toString.call([1，2，3]) // "[object Array]"`
+ * `Object.prototype.toString.call({name:"simmer"}) // "[object Object]"`
+ * `Object.prototype.toString.call(/ simmer/g) // "[object RegExp]"`
+ * `Object.prototype.toString.call(true) // "[object Boolean]"`
