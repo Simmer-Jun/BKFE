@@ -5,9 +5,9 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Introduction | Basic Knowledge of Front End</title>
+        <title>CSS选择器 | Basic Knowledge of Front End</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="千里之行，始于足下。">
+        <meta name="description" content="">
         <meta name="generator" content="GitBook 2.4.3">
         
         
@@ -15,13 +15,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
-        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
         
-    <link rel="stylesheet" href="gitbook/style.css">
+    <link rel="stylesheet" href="../gitbook/style.css">
     
         
-        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
         
     
     
@@ -29,8 +29,10 @@
         
     
     
-    <link rel="next" href="./HTML/index.html" />
+    <link rel="next" href="../CSS/text-attribute.html" />
     
+    
+    <link rel="prev" href="../HTML/script.html" />
     
 
         
@@ -38,7 +40,7 @@
     <body>
         
         
-    <div class="book" data-level="0" data-basepath="." data-revision="Thu Oct 08 2015 21:53:53 GMT+0800 (CST)">
+    <div class="book" data-level="2.1" data-basepath=".." data-revision="Thu Oct 08 2015 21:53:53 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -56,10 +58,10 @@
 
             
     
-        <li class="chapter active" data-level="0" data-path="index.html">
+        <li class="chapter " data-level="0" data-path="index.html">
             
                 
-                    <a href="./index.html">
+                    <a href="../index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -72,7 +74,7 @@
         <li class="chapter " data-level="1" data-path="HTML/index.html">
             
                 
-                    <a href="./HTML/index.html">
+                    <a href="../HTML/index.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -88,7 +90,7 @@
         <li class="chapter " data-level="1.1" data-path="HTML/script.html">
             
                 
-                    <a href="./HTML/script.html">
+                    <a href="../HTML/script.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -113,10 +115,10 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.1" data-path="CSS/selectors.html">
+        <li class="chapter active" data-level="2.1" data-path="CSS/selectors.html">
             
                 
-                    <a href="./CSS/selectors.html">
+                    <a href="../CSS/selectors.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -131,7 +133,7 @@
         <li class="chapter " data-level="2.2" data-path="CSS/text-attribute.html">
             
                 
-                    <a href="./CSS/text-attribute.html">
+                    <a href="../CSS/text-attribute.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -146,7 +148,7 @@
         <li class="chapter " data-level="2.3" data-path="CSS/zindex.html">
             
                 
-                    <a href="./CSS/zindex.html">
+                    <a href="../CSS/zindex.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -259,7 +261,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="./" >Basic Knowledge of Front End</a>
+        <a href="../" >Basic Knowledge of Front End</a>
     </h1>
 </div>
 
@@ -269,19 +271,39 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="basic-knowledge-of-front-end">Basic Knowledge of Front End</h1>
-<p>&#x5343;&#x91CC;&#x4E4B;&#x884C;&#xFF0C;&#x59CB;&#x4E8E;&#x8DB3;&#x4E0B;&#x3002;</p>
-<p>&#x76EE;&#x5F55;&#x8BF4;&#x660E;&#xFF1A;</p>
+                        <h2 id="css-%E9%80%89%E6%8B%A9%E5%99%A8%E7%9F%A5%E5%A4%9A%E5%B0%91">CSS &#x9009;&#x62E9;&#x5668;&#x77E5;&#x591A;&#x5C11;</h2>
+<p>&#x4ECE;&#x9009;&#x62E9;&#x5668;&#x7684;&#x7C7B;&#x578B;&#x5212;&#x5206;&#xFF1A;</p>
 <ul>
-<li><code>HTML</code>&#x6587;&#x4EF6;&#x5939;&#xFF1A;&#x8BB2;&#x89E3;&#x57FA;&#x7840;&#x7684;HTMl&#x77E5;&#x8BC6;</li>
-<li><code>CSS</code>&#x6587;&#x4EF6;&#x5939;&#xFF1A;&#x8BB2;&#x89E3;&#x57FA;&#x7840;&#x7684;CSS&#x77E5;&#x8BC6;</li>
-<li><code>Javascript</code>&#x6587;&#x4EF6;&#x5939;&#xFF1A;&#x8BB2;&#x89E3;&#x57FA;&#x7840;&#x7684;JavaScript&#x77E5;&#x8BC6;</li>
-<li><code>Framework</code>&#x6587;&#x4EF6;&#x5939;&#xFF1A;&#x6846;&#x67B6;&#x7684;&#x57FA;&#x7840;&#x4E86;&#x89E3;</li>
-<li><code>Optimization</code>&#x6587;&#x4EF6;&#x5939;&#xFF1A;&#x524D;&#x7AEF;&#x4F18;&#x5316;</li>
-<li><code>Tools</code>&#x6587;&#x4EF6;&#x5939;&#xFF1A;&#x524D;&#x7AEF;&#x5DE5;&#x5177;&#x7684;&#x4ECB;&#x7ECD;</li>
-<li><p><code>img</code>&#x6587;&#x4EF6;&#x5939;&#xFF1A;&#x5B58;&#x653E;&#x56FE;&#x7247;&#x76EE;&#x5F55;</p>
+<li>ID&#x9009;&#x62E9;&#x5668; </li>
+<li>&#x7C7B;&#x9009;&#x62E9;&#x5668;</li>
+<li>&#x6807;&#x7B7E;&#x9009;&#x62E9;&#x5668;</li>
+<li>&#x5C5E;&#x6027;&#x9009;&#x62E9;&#x5668;&#xFF0C;&#x53EF;&#x4EE5;&#x5212;&#x5206;&#x4E3A;&#xFF1A;<ul>
+<li>&#x7B80;&#x5355;&#x5C5E;&#x6027;&#x9009;&#x62E9;&#x5668; &#x7C7B;&#x4F3C; a[href] &#x5C06;&#x4F1A;&#x9009;&#x4E2D;&#x6709;href&#x5C5E;&#x6027;&#x7684;a&#x5143;&#x7D20;</li>
+<li>&#x5177;&#x4F53;&#x5C5E;&#x6027;&#x9009;&#x62E9;&#x5668;  &#x7C7B;&#x4F3C; h1[class=&quot;tittle&quot;] &#x9009;&#x4E2D;&#x6240;&#x6709;&#x5305;&#x542B;&#x5B8C;&#x6574;class=&quot;title&quot;&#x7684;&#x5143;&#x7D20; &#xFF08;&#x5B9E;&#x884C;&#x4E25;&#x683C;&#x5339;&#x914D;&#x673A;&#x5236;&#xFF09;</li>
+<li>&#x90E8;&#x5206;&#x5C5E;&#x6027;&#x9009;&#x62E9;&#x5668;  &#x7C7B;&#x4F3C; span[data~=&quot;simmer&quot;] &#x6839;&#x636E;&#x5C5E;&#x6027;&#x4E2D;&#x5206;&#x5272;&#x7684;&#x67D0;&#x4E2A;&#x8BCD;&#x6765;&#x8FDB;&#x884C;&#x5339;&#x914D; &#xFF08;&#x6CE8;&#x610F;&#x6BD4;&#x8F83;&#x548C;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x7684;&#x533A;&#x522B;&#xFF09;<ul>
+<li>[foo^=&quot;en&quot;]   &#x9009;&#x62E9;foo&#x5C5E;&#x6027;&#x4EE5;en&#x5F00;&#x5934;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;</li>
+<li>[foo$=&quot;en&quot;]   &#x9009;&#x62E9;foo&#x5C5E;&#x6027;&#x4EE5;en&#x7ED3;&#x5C3E;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;</li>
+<li>[foo*=&quot;en&quot;]    &#x9009;&#x62E9;foo&#x5C5E;&#x6027;&#x4E2D;&#x5305;&#x542B;&#x5B50;&#x4E32;en&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;</li>
+</ul>
 </li>
-<li><p>second commit</p>
+<li>&#x7279;&#x5B9A;&#x5C5E;&#x6027;&#x9009;&#x62E9;&#x5668; &#x5982; p[lang|=&quot;en&quot;] &#x5C06;&#x4F1A;&#x9009;&#x62E9;lang&#x5C5E;&#x6027;&#x7B49;&#x4E8E;en&#x6216;&#x8005;&#x4EE5;en- &#x5F00;&#x5934;&#x7684;&#x6240;&#x6709;p&#x5143;&#x7D20;</li>
+</ul>
+</li>
+<li>&#x4F7F;&#x7528;&#x6587;&#x6863;&#x7ED3;&#x6784;
+  1 &#x540E;&#x4EE3;&#x9009;&#x62E9;&#x5668; p  a  &#x9009;&#x62E9;p&#x5143;&#x7D20;&#x91CC;&#x9762;&#x7684;&#x6240;&#x6709;a&#x5143;&#x7D20;&#xFF0C;&#x4E0D;&#x7BA1;&#x5D4C;&#x5957;&#x7684;&#x591A;&#x6DF1;
+  2 &#x76F4;&#x63A5;&#x5B50;&#x5143;&#x7D20;&#x9009;&#x62E9;&#x5668;  p &gt; a &#x9009;&#x62E9;a&#x7684;&#x76F4;&#x63A5;&#x7236;&#x5143;&#x7D20;&#x4E3A;p&#x7684;&#x6240;&#x6709;a&#x5143;&#x7D20;
+  3 &#x76F8;&#x90BB;&#x5144;&#x5F1F;&#x9009;&#x62E9;&#x5668;  h1 + p &#x9009;&#x62E9;&#x7D27;&#x63A5;&#x7740;h1&#x51FA;&#x73B0;&#x7684;&#x6240;&#x6709;&#x7684;p&#x5143;&#x7D20;&#xFF0C;h1&#x8981;&#x4E0E;p&#x5143;&#x7D20;&#x6709;&#x5171;&#x540C;&#x7684;&#x7236;&#x5143;&#x7D20;&#x3002;</li>
+<li>&#x4F2A;&#x7C7B;&#x9009;&#x62E9;&#x5668;   &#x987A;&#x5E8F; link&gt;visited&gt;focus&gt;hover&gt;active
+  1 &#x9759;&#x6001;&#x94FE;&#x63A5;&#x4F2A;&#x7C7B; a:link  a:visited<br>  2 &#x52A8;&#x6001;&#x4F2A;&#x7C7B; :focus &#x6307;&#x793A;&#x5F53;&#x524D;&#x62E5;&#x6709;&#x8F93;&#x5165;&#x7126;&#x70B9;&#x7684;&#x5143;&#x7D20; &#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x952E;&#x76D8;&#x6FC0;&#x6D3B;&#x6216;&#x67D0;&#x79CD;&#x65B9;&#x5F0F;&#x6FC0;&#x6D3B;&#x7684;&#x5143;&#x7D20;<pre><code>                :hover &#x6307;&#x793A;&#x9F20;&#x6807;&#x6307;&#x9488;&#x505C;&#x7559;&#x5728;&#x54EA;&#x4E2A;&#x5143;&#x7D20;
+                :active &#x6307;&#x793A;&#x88AB;&#x7528;&#x6237;&#x8F93;&#x5165;&#x6FC0;&#x6D3B;&#x7684;&#x5143;&#x7D20; &#x9F20;&#x6807;&#x70B9;&#x51FB;&#x5728;&#x8D85;&#x94FE;&#x63A5;&#x4E0A;&#x7684;&#x90A3;&#x4E00;&#x65F6;&#x523B;&#x88AB;&#x6FC0;&#x6D3B;
+</code></pre>  3 &#x9759;&#x6001;&#x4F2A;&#x7C7B; :first-child   &#x4F8B;&#x5982; p:first-child &#x5C06;&#x4F1A;&#x9009;&#x62E9;&#x4F5C;&#x4E3A;&#x67D0;&#x4E2A;&#x5143;&#x7D20;&#x7B2C;&#x4E00;&#x4E2A;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x6240;&#x6709;p
+  4 &#x6839;&#x636E;&#x8BED;&#x8A00;  :lang()&#x4F2A;&#x7C7B;  *:lang(fr) &#x9009;&#x4E2D;&#x6240;&#x6709;&#x7684;&#x6CD5;&#x8BED;&#x5143;&#x7D20;
+  5 &#x7ED3;&#x5408;&#x4F2A;&#x7C7B; a:link:hover </li>
+<li>&#x4F2A;&#x5143;&#x7D20;&#x9009;&#x62E9;&#x5668;<ul>
+<li>&#x8BBE;&#x7F6E;&#x9996;&#x5B57;&#x6BCD;&#x6837;&#x5F0F;  p:first-letter &#x53EA;&#x80FD;&#x7528;&#x4E8E;&#x6807;&#x8BB0;&#x4E0E;&#x6BB5;&#x843D;&#x7B49;&#x5757;&#x7EA7;&#x5143;&#x7D20;</li>
+<li>&#x8BBE;&#x7F6E;&#x9996;&#x884C;&#x6837;&#x5F0F;  p:first-line   &#x53EA;&#x80FD;&#x7528;&#x4E8E;&#x6807;&#x8BB0;&#x4E0E;&#x6BB5;&#x843D;&#x7B49;&#x5757;&#x7EA7;&#x5143;&#x7D20;</li>
+<li>:before   and  :after  &#x4F2A;&#x5143;&#x7D20;</li>
+</ul>
 </li>
 </ul>
 
@@ -294,14 +316,16 @@
         </div>
 
         
+        <a href="../HTML/script.html" class="navigation navigation-prev " aria-label="Previous page: script标签"><i class="fa fa-angle-left"></i></a>
         
-        <a href="./HTML/index.html" class="navigation navigation-next navigation-unique" aria-label="Next page: HTML基础"><i class="fa fa-angle-right"></i></a>
+        
+        <a href="../CSS/text-attribute.html" class="navigation navigation-next " aria-label="Next page: CSS文本属性"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
 
         
-<script src="gitbook/app.js"></script>
+<script src="../gitbook/app.js"></script>
 
 <script>
 require(["gitbook"], function(gitbook) {
