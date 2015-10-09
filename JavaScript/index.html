@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>CSS文本属性 | Basic Knowledge of Front End</title>
+        <title>JavaScript基础 | Basic Knowledge of Front End</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.4.3">
@@ -29,10 +29,10 @@
         
     
     
-    <link rel="next" href="../CSS/zindex.html" />
+    <link rel="next" href="../JavaScript/bzobject.html" />
     
     
-    <link rel="prev" href="../CSS/selectors.html" />
+    <link rel="prev" href="../CSS/basicalvisual.html" />
     
 
         
@@ -40,7 +40,7 @@
     <body>
         
         
-    <div class="book" data-level="2.2" data-basepath=".." data-revision="Fri Oct 09 2015 19:22:25 GMT+0800 (CST)">
+    <div class="book" data-level="3" data-basepath=".." data-revision="Fri Oct 09 2015 19:22:25 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -138,7 +138,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.2" data-path="CSS/text-attribute.html">
+        <li class="chapter " data-level="2.2" data-path="CSS/text-attribute.html">
             
                 
                     <a href="../CSS/text-attribute.html">
@@ -188,7 +188,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3" data-path="JavaScript/index.html">
+        <li class="chapter active" data-level="3" data-path="JavaScript/index.html">
             
                 
                     <a href="../JavaScript/index.html">
@@ -390,28 +390,15 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="css-%E6%96%87%E6%9C%AC%E5%B1%9E%E6%80%A7">CSS &#x6587;&#x672C;&#x5C5E;&#x6027;</h1>
-<p>&#x6807;&#x7B7E;&#xFF1A; CSS CSS&#x57FA;&#x7840;</p>
-<hr>
-<h2 id="%E5%BF%AB%E9%80%9F%E5%A4%8D%E4%B9%A0">&#x5FEB;&#x901F;&#x590D;&#x4E60;</h2>
-<p>&#x5728;&#x8BA8;&#x8BBA;CSS&#x6587;&#x672C;&#x5C5E;&#x6027;&#x4E4B;&#x524D;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x4E00;&#x8D77;&#x6765;&#x56DE;&#x987E;&#x4E00;&#x4E9B;&#x57FA;&#x7840;&#x77E5;&#x8BC6;&#x3002;</p>
-<ol>
-<li>&#x6C34;&#x5E73;&#x7F29;&#x8FDB;&#x5C5E;&#x6027;<code>text-indent</code>&#xFF0C;&#x7528;&#x4E8E;&#x63A7;&#x5236;&#x9996;&#x884C;&#x7F29;&#x8FDB;&#x3002;&#xFF08;&#x53EF;&#x7EE7;&#x627F;/&#x7528;&#x4E8E;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#xFF09;</li>
-<li>&#x6C34;&#x5E73;&#x5BF9;&#x9F50;&#x5C5E;&#x6027;<code>text-align</code>&#xFF0C;&#x7528;&#x4E8E;&#x63A7;&#x5236;&#x6587;&#x672C;&#x884C;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;&#x3002;&#xFF08;&#x53EF;&#x7EE7;&#x627F;/&#x7528;&#x4E8E;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#xFF09;</li>
-<li>&#x884C;&#x9AD8;<code>line-height</code>&#xFF0C;&#x7528;&#x4E8E;&#x63A7;&#x5236;&#x5782;&#x76F4;&#x5BF9;&#x9F50;&#x3002;&#xFF08;&#x53EF;&#x7EE7;&#x627F;/&#x767E;&#x5206;&#x6570;&#x76F8;&#x5BF9;&#x4E8E;&#x5143;&#x7D20;&#x7684;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#xFF09;</li>
-<li>&#x7528;&#x4E8E;&#x63A7;&#x5236;&#x5782;&#x76F4;&#x5BF9;&#x9F50;&#x7684;&#x5C5E;&#x6027;<code>vertical-align</code>&#x3002;&#xFF08;&#x4E0D;&#x53EF;&#x7EE7;&#x627F;&#xFF09;</li>
-<li>&#x7528;&#x4E8E;&#x63A7;&#x5236;&#x5B57;&#x95F4;&#x8DDD;&#x7684;<code>word-spacing</code>&#x5C5E;&#x6027;&#x3002;&#xFF08;&#x53EF;&#x7EE7;&#x627F;&#xFF09;</li>
-<li>&#x7528;&#x4E8E;&#x63A7;&#x5236;&#x5B57;&#x6BCD;&#x95F4;&#x95F4;&#x8DDD;&#x7684;<code>letter-spacing</code>&#x5C5E;&#x6027;&#x3002;&#xFF08;&#x53EF;&#x7EE7;&#x627F;&#xFF09;</li>
-<li>&#x7528;&#x4E8E;&#x63A7;&#x5236;&#x6587;&#x672C;&#x5927;&#x5C0F;&#x5199;&#x7684;<code>text-transform</code>&#x5C5E;&#x6027;&#x3002;&#xFF08;&#x53EF;&#x7EE7;&#x627F;&#xFF09;</li>
-<li>&#x6587;&#x672C;&#x4FEE;&#x9970;&#x5C5E;&#x6027;<code>text-decoration</code>&#x3002;&#xFF08;&#x4E0D;&#x53EF;&#x7EE7;&#x627F;&#xFF09;</li>
-<li>&#x6587;&#x672C;&#x9634;&#x5F71;<code>text-shadow</code>&#x3002;&#xFF08;&#x4E0D;&#x53EF;&#x7EE7;&#x627F;&#xFF09;</li>
-</ol>
-<h3 id="text-indent">text-indent</h3>
-<p>&#x521D;&#x59CB;&#x503C;&#xFF1A;&#x3008;length&#x3009;|&#x3008;percentage&#x3009;| inherit
-&#x521D;&#x59CB;&#x503C;&#xFF1A; 0
-&#x5E94;&#x7528;&#x4E8E;&#xFF1A;&#x5757;&#x7EA7;&#x5143;&#x7D20;
-&#x53EF;&#x7EE7;&#x627F;</p>
-<p>&#x7531;&#x4E8E;<code>text-indent</code>&#x7684;&#x503C;&#x53EF;&#x4EE5;&#x4E3A;&#x8D1F;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x4E00;&#x4E9B;&#x7279;&#x6B8A;&#x6548;&#x679C;&#x3002;</p>
+                        <h2 id="%E5%BF%AB%E9%80%9F%E5%AF%BC%E8%88%AA">&#x5FEB;&#x901F;&#x5BFC;&#x822A;</h2>
+<p>&#x9009;&#x62E9;&#x4E00;&#x9879;&#x4F60;&#x60F3;&#x77E5;&#x9053;&#x7684;javascript &#x77E5;&#x8BC6;&#x70B9;&#xFF1A;</p>
+<ul>
+<li><a href="https://github.com/Simmer-Jun/BKFE/blob/master/JavaScript/arrfunction.md" target="_blank">Array&#x7C7B;&#x65B9;&#x6CD5;</a></li>
+<li><a href="https://github.com/Simmer-Jun/BKFE/blob/master/JavaScript/bzobject.md" target="_blank">&#x5305;&#x88C5;&#x5BF9;&#x8C61;</a></li>
+<li><a href="https://github.com/Simmer-Jun/BKFE/blob/master/JavaScript/jsbom.md" target="_blank">BOM</a></li>
+<li><a href="https://github.com/Simmer-Jun/BKFE/blob/master/JavaScript/jstype.md" target="_blank">&#x7C7B;&#x578B;&#x5224;&#x65AD;</a></li>
+<li><a href="https://github.com/Simmer-Jun/BKFE/blob/master/JavaScript/dom1.md" target="_blank">DOM1</a></li>
+</ul>
 
                     
                     </section>
@@ -422,10 +409,10 @@
         </div>
 
         
-        <a href="../CSS/selectors.html" class="navigation navigation-prev " aria-label="Previous page: CSS选择器"><i class="fa fa-angle-left"></i></a>
+        <a href="../CSS/basicalvisual.html" class="navigation navigation-prev " aria-label="Previous page: 基本视觉格式化"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../CSS/zindex.html" class="navigation navigation-next " aria-label="Next page: z-index"><i class="fa fa-angle-right"></i></a>
+        <a href="../JavaScript/bzobject.html" class="navigation navigation-next " aria-label="Next page: 包装对象"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
