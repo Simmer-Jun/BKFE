@@ -1,4 +1,4 @@
-#Basic Knowledge of Front End#
+#Basic Knowledge of Front End
 千里之行，始于足下。
 
 目录说明：
@@ -9,6 +9,12 @@
  * `Optimization`文件夹：前端优化
  * `Tools`文件夹：前端工具的介绍
  * `img`文件夹：存放图片目录
+ * `Nodejs`文件夹： nodejs知识
+ * `ES6`文件夹：ECMAScript6 讲解
+ * `Others`文件夹： 其他方向讲解 
 
 
-这只是个人对于基础知识的理解，如有任何问题，欢迎提issue给我，帮助我改正错误。感谢
+如有任何问题，欢迎提issue给我，帮助我改正错误。感谢
+
+## LISCENCE
+MIT
