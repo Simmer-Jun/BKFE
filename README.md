@@ -17,4 +17,4 @@
 如有任何问题，欢迎提issue给我，帮助我改正错误。
 
 ## LISCENCE
-MIT
+[MIT](LICENSE)

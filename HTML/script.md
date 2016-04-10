@@ -18,7 +18,8 @@
 
 ## 使用DOM 动态加载script标签 对于动态加载的script标签：##
 
-    var script = document.createElement('script');
+``` js
+var script = document.createElement('script');
     script.src = 'load.js';
     if(script.readyState) {
         script.onreadystatechange = function () {
@@ -33,6 +34,7 @@
     }
     }
     document.getElementsByTagName('body')[0].appendChild(script);
+```
 
 
 我发现了什么?
